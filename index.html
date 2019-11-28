@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function calcular(){
+            var numero1 = document.getElementById("numero1").value;
+            var numero2 = document.getElementById("numero2").value;
+            var soma = parseInt(numero1) + parseInt(numero2);
+            alert(soma);
+    }   
+    </script>
+</head>
+<body>
+    <form action="" method="get">
+        <input type="text" id="numero1">
+                     +  
+        <input type="text" id="numero2">
+        <input type="submit" id="submit" onclick="calcular();" value="Calcular">
+    </form>
+</body>
+</html>
